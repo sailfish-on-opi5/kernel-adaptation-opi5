@@ -1,5 +1,5 @@
 # Device details
-%define device pinephonepro
+%define device orangepi5
 
 # Kernel target architecture
 %define kernel_arch arm64
@@ -13,7 +13,7 @@
 %define device_target_cpu aarch64
 
 # Defconfig to pick-up
-%define defconfig pinephone_pro_defconfig_sfos
+%define defconfig orangepi_5_defconfig_sfos
 
 # Linux kernel source directory
 %define source_directory linux/
@@ -34,6 +34,6 @@
 ##define build_zImage 1
 
 # Build and pick-up the following devicetrees
-%define devicetrees rockchip/rk3399-pinephone-pro.dtb
+%define devicetrees rockchip/rk3588s-orangepi-5.dtb
 
 %include kernel-adaptation-simplified/kernel-adaptation-simplified.inc
